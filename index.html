@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SPY Gap Prediction - ShadowTrade.ai</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      color: #58a6ff;
+    }
+    .card {
+      display: inline-block;
+      padding: 20px 30px;
+      background-color: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      margin-top: 30px;
+      font-size: 1.2rem;
+    }
+    .label {
+      color: #8b949e;
+      margin-right: 8px;
+    }
+    .value {
+      font-weight: bold;
+      color: #f0f6fc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>SPY Gap Prediction</h1>
+
+  <div class="card">
+    <p><span class="label">Prediction Date:</span> <span id="predDate" class="value"></span></p>
+    <p><span class="label">Prediction:</span> <span id="predLabel" class="value"></span></p>
+    <p><span class="label">Numeric Value:</span> <span id="predNumeric" class="value"></span></p>
+    <p><span class="label">Generated At:</span> <span id="predTime" class="value"></span></p>
+  </div>
+
+  <script src="prediction.js"></script>
+  <script>
+    document.getElementById("predDate").textContent = predictionData.date;
+    document.getElementById("predLabel").textContent = predictionData.prediction;
+    document.getElementById("predNumeric").textContent = predictionData.numeric;
+    document.getElementById("predTime").textContent = predictionData.generated_at;
+  </script>
+
+</body>
+</html>
