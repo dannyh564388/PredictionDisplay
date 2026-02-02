@@ -1,6 +1,6 @@
 const predictionData = {
-    date: "2026-01-30",
+    date: "2026-02-02",
     prediction: "No Gap",
     numeric: 0,
-    generated_at: "2026-02-01 16:04:56"
+    generated_at: "2026-02-02 16:05:09"
 };
